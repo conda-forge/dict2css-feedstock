@@ -1,5 +1,5 @@
 {% set name = "dict2css" %}
-{% set version = "0.3.0.post1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dict2css-{{ version }}.tar.gz
-  sha256: 89c544c21c4ca7472c3fffb9d37d3d926f606329afdb751dc1de67a411b70719
+  sha256: fbb01ebf86c5b667aa9d0348294ef7141a1ee0b64df75d468ea423e1aaef561a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
