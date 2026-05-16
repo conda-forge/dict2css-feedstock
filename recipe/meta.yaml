@@ -20,8 +20,8 @@ requirements:
     - python {{ python_min }}
     - whey >=0.0.20
   run:
-    - cssutils <=2.11.0,>=2.2.0
     - domdf-python-tools >=2.2.0
+    - tinycss2 >=1.2.1
     - python >={{ python_min }}
 
 test:
